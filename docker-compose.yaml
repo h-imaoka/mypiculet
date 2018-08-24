@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  piculet:
+    image: himaoka/mypiculet
+    environment:
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - AWS_REGION
+      - AWS_DEFAULT_REGION
+      - AWS_PROFILE
+      # - PICULET_WN=50 # warn rules per sg (default 50)
+    volumes:
+      - .:/src
+    working_dir: /src
