@@ -12,4 +12,5 @@ services:
       # - PICULET_WN=50 # warn rules per sg (default 50)
     volumes:
       - .:/src
+      - ~/.aws:/root/.aws
     working_dir: /src
