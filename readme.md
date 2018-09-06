@@ -12,13 +12,15 @@ mypiculet (piculet in docker)
 
 # Ops
 ```
-docker-compose run --rm piculet -e > Groupfile
+docker-compose run --rm -T piculet -e > Groupfile
 
 docker-compose run --rm piculet -a --dry-run
 
 Apply `Groupfile` to SecurityGroup (dry-run)
 No change
 ```
+## why `-T`
+When `tty=ture`, dump `CRLF`
 
 # Forgot `--rm` ...
 `docker-compose down`
