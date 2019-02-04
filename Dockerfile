@@ -5,7 +5,7 @@ apk upgrade --no-cache; \
 apk add --no-cache --virtual build-dependencies git build-base; \
 git clone https://github.com/h-imaoka/piculet.git; \
 cd piculet; \
-git checkout over-50-rules-env; \
+git checkout support-ipv6; \
 gem build piculet.gemspec; \
 gem install piculet-0.2.9.gem; \
 apk del build-dependencies git build-base;'
