@@ -7,7 +7,7 @@ git clone https://github.com/h-imaoka/piculet.git; \
 cd piculet; \
 git checkout support-ipv6; \
 gem build piculet.gemspec; \
-gem install piculet-0.2.9.gem; \
+gem install piculet-0.3.0.beta.gem; \
 apk del build-dependencies git build-base;'
 
 
